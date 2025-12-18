@@ -2,12 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Clone Repository') {
-            steps {
-                git 'https://github.com/70150335-cpu/Jenkinsfile.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 echo 'Build stage running...'
@@ -27,3 +21,4 @@ pipeline {
         }
     }
 }
+
